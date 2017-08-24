@@ -335,3 +335,7 @@ except ImportError:
     pass
 else:
     set_dynamic_settings(globals())
+
+# enable TINYCME text color
+TINYMCE_SETUP_JS = "js/tinymce_setup.js"
+RICHTEXT_FILTER_LEVEL = 3
