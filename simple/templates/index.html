@@ -1,7 +1,12 @@
 {% extends "base.html" %}
 {% load i18n mezzanine_tags staticfiles %}
 
-{% block meta_title %}{% trans "Home" %}{% endblock %}
+{% block meta_title %}Custom made wedding dresses, bridesmaid dresses, prom dresses, evening dresses at reasonable wholesale prices{% endblock %}
+
+{% block meta_keywords %}custom bridal dresses, custom bridesmaid dresses, custom special occasion dresses, custom prom dresses, custom wedding dresses, pretty wedding dresses, made to order dresses, tailored wedding dresses{% endblock %}
+
+{% block meta_description %}All wedding dresses, bridesmaid dresses, prom dresses, evening dresses and other special occasion dresses here are custom made according to your pictures. You can specify styles, colors and sizes you want, and we will strictly follow your requirements to make the dresses.{% endblock %}
+
 
 {% block breadcrumb_wrapper %}
 {% endblock %}
@@ -28,13 +33,7 @@
                                 <div id="main-slider" class="flexslider">
                                     <ul class="slides">
                                         <li>
-                                            <img src="{% static "img/slides/slide1.jpg" %}" alt=""/>
-{#                                            <div class="flex-caption">#}
-{#                                                <h3>Modern Design</h3>#}
-{#                                                <p>Duis fermentum auctor ligula ac malesuada. Mauris et metus odio, in#}
-{#                                                    pulvinar urna</p>#}
-{#                                                <a href="#" class="btn btn-theme">Learn More</a>#}
-{#                                            </div>#}
+                                            <img src="{% static "img/slides/slide1.jpg" %}" alt="Welcome to my shop"/>
                                         </li>
 
                                     </ul>
@@ -53,29 +52,29 @@
     </section>
 
 
-    <!-- <section class="callaction">
+    <section class="callaction">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="big-cta">
                         <div class="cta-text">
-                            <h2>Welcome To <span>Cindy's</span> Shop</h2>
+                            <h2><span>Why</span> Choose US</h2>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <section id="content">
         <div class="container">
-            <!-- <div class="row">
+            <div class="row">
                 <div class="col-lg-12">
                     <div class="row">
                         <div class="col-lg-3">
                             <div class="box">
                                 <div class="box-gray aligncenter">
-                                    <h4>Bridal Dresses</h4>
+                                    <h4>Guranteed Quality</h4>
                                     <div class="icon">
                                         <i class="fa fa-desktop fa-3x"></i>
                                     </div>
@@ -84,15 +83,15 @@
                                     </p>
 
                                 </div>
-                                <div class="box-bottom">
+                                <!-- <div class="box-bottom">
                                     <a href="/gallery/bridal-dresses/">Learn more</a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <div class="col-lg-3">
                             <div class="box">
                                 <div class="box-gray aligncenter">
-                                    <h4>Special Occasion Dresses</h4>
+                                    <h4>Competitive Prices</h4>
                                     <div class="icon">
                                         <i class="fa fa-pagelines fa-3x"></i>
                                     </div>
@@ -101,15 +100,13 @@
                                     </p>
 
                                 </div>
-                                <div class="box-bottom">
-                                    <a href="/gallery/special-occasional-dresses/">Learn more</a>
-                                </div>
+ 
                             </div>
                         </div>
                         <div class="col-lg-3">
                             <div class="box">
                                 <div class="box-gray aligncenter">
-                                    <h4>Customizable</h4>
+                                    <h4>Customized Orders</h4>
                                     <div class="icon">
                                         <i class="fa fa-edit fa-3x"></i>
                                     </div>
@@ -118,15 +115,13 @@
                                     </p>
 
                                 </div>
-                                <div class="box-bottom">
-                                    <a href="#">Learn more</a>
-                                </div>
+   
                             </div>
                         </div>
                         <div class="col-lg-3">
                             <div class="box">
                                 <div class="box-gray aligncenter">
-                                    <h4>Valid HTML5</h4>
+                                    <h4>No MOQ</h4>
                                     <div class="icon">
                                         <i class="fa fa-code fa-3x"></i>
                                     </div>
@@ -135,26 +130,23 @@
                                     </p>
 
                                 </div>
-                                <div class="box-bottom">
-                                    <a href="#">Learn more</a>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
             <!-- divider -->
-            <!-- <div class="row">
+            <div class="row">
                 <div class="col-lg-12">
                     <div class="solidline">
                     </div>
                 </div>
-            </div> -->
+            </div>
             <!-- end divider -->
             <!-- Portfolio Projects -->
             <div class="row">
                 <div class="col-lg-12">
-                    <h4 class="heading">Recent Works</h4>
+                    <h4 class="heading">Features</h4>
                     <div class="row">
                         <section id="projects">
                             <ul class="portfolio" id="thumbs">
@@ -162,54 +154,28 @@
                                 <li data-type="web" data-id="id-0" class="col-lg-3 design">
                                     <div class="item-thumbs">
                                         <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                                        <a href="{% static "img/works/1.jpg" %}" title="Work 1"
+                                        <a href="{% static "img/works/bridal-dresses.jpg" %}" title="Custom Bridal Dresses"
                                            data-fancybox-group="gallery" class="hover-wrap fancybox">
                                             <span class="overlay-img"></span>
                                             <span class="overlay-img-thumb font-icon-plus"></span>
                                         </a>
                                         <!-- Thumb Image and Description -->
-                                        <img alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis."
-                                             src="{% static "img/works/1.jpg" %}">
+                                        <img alt="We provide high quality and pretty bridal dresses customized for you."
+                                             src="{% static "img/works/bridal-dresses.jpg" %}">
                                     </div>
                                 </li>
                                 <!-- End Item Project -->
                                 <!-- Item Project and Filter Name -->
                                 <li data-type="icon" data-id="id-1" class="item-thumbs col-lg-3 design">
                                     <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                                    <a href="{% static "img/works/2.jpg" %}" title="Work 2"
+                                    <a href="{% static "img/works/sepcial-occasion-dress.jpg" %}" title="Custom Special Occasion Dresses"
                                        data-fancybox-group="gallery" class="hover-wrap fancybox">
                                         <span class="overlay-img"></span>
                                         <span class="overlay-img-thumb font-icon-plus"></span>
                                     </a>
                                     <!-- Thumb Image and Description -->
-                                    <img alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis."
-                                         src="{% static "img/works/2.jpg" %}">
-                                </li>
-                                <!-- End Item Project -->
-                                <!-- Item Project and Filter Name -->
-                                <li data-type="illustrator" data-id="id-2" class="item-thumbs col-lg-3 photography">
-                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                                    <a href="{% static "img/works/3.jpg" %}" title="Work 3"
-                                       data-fancybox-group="gallery" class="hover-wrap fancybox">
-                                        <span class="overlay-img"></span>
-                                        <span class="overlay-img-thumb font-icon-plus"></span>
-                                    </a>
-                                    <!-- Thumb Image and Description -->
-                                    <img alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis."
-                                         src="{% static "img/works/3.jpg" %}">
-                                </li>
-                                <!-- End Item Project -->
-                                <!-- Item Project and Filter Name -->
-                                <li data-type="illustrator" data-id="id-2" class="item-thumbs col-lg-3 photography">
-                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                                    <a href="{% static "img/works/4.jpg" %}" title="Work 4"
-                                       data-fancybox-group="gallery" class="hover-wrap fancybox">
-                                        <span class="overlay-img"></span>
-                                        <span class="overlay-img-thumb font-icon-plus"></span>
-                                    </a>
-                                    <!-- Thumb Image and Description -->
-                                    <img alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis."
-                                         src="{% static "img/works/4.jpg" %}">
+                                    <img alt="We provide prom dresses, evening dresses and other special occasion dresses."
+                                         src="{% static "img/works/sepcial-occasion-dress.jpg" %}">
                                 </li>
                                 <!-- End Item Project -->
                             </ul>
